@@ -1,11 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>File HTML index</title>
-</head>
-<body>
-  
-</body>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Online</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Main font and colors */
+      body {
+        background: #f0f8ff; /* Light blue background */
+        color: #333;
+        font-family: "Quicksand", sans-serif;
+        padding: 30px;
+        overflow-x: hidden;
+      }
+
+      /* Card styling */
+      .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        margin-top: 40px;
+        position: relative;
+      }
+
+      /* Header styling */
+      .card-header {
+        background: linear-gradient(
+          135deg,
+          #ff7eb9,
+          #ff76a1
+        ); /* Vibrant pink gradient */
+        color: #ffffff;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 30px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      /* Table styling */
+      .table-custom {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+
+      .table-custom th {
+        background-color: #fffae6;
+        color: #5a5a5a;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .table-custom td {
+        background-color: #fdfdfd;
+        font-size: 1rem;
+        padding: 20px;
+        color: #5a5a5a;
+        text-align: center;
+      }
+
+      .icon {
+        color: #ff6f91;
+        margin-right: 10px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ff4c77;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Button with gradient */
+      .btn-pastel {
+        background: linear-gradient(135deg, #ff96a5, #ff5d5d);
+        color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      .btn-pastel:hover {
+        background: linear-gradient(135deg, #ff5d5d, #ff96a5);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Floating icons */
+      .floating-icon {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 40px;
+        color: #ff7eb9;
+        animation: bounce 2s infinite alternate;
+      }
+
+      .floating-icon:nth-child(2) {
+        right: 100px;
+        font-size: 45px;
+        animation-delay: 0.5s;
+      }
+
+      .floating-icon:nth-child(3) {
+        right: 150px;
+        font-size: 50px;
+        animation-delay: 1s;
+      }
+
+      /* Animation for floating icons */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-15px);
+        }
+      }
+
+      /* Footer styling */
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #ff7eb9;
+        border-radius: 15px;
+        font-size: 1rem;
+        color: white;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body class="d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container">
+      <!-- Card Section -->
+      <div class="card">
+        <div class="card-header">
+          <i class="fas fa-leaf"></i> <strong>Media Online</strong>
+        </div>
+        <div class="card-body text-center">
+          <h2 class="text-primary mb-4">Sosial Media Developer</h2>
+          <p class="text-muted" style="font-size: 1.2rem">
+            Belajar dan berbagi agar hidup menjadi lebih baik
+          </p>
+
+          <!-- Benefit Section -->
+          <div class="section-title">
+            <h3>Benefit Join di Media Online</h3>
+          </div>
+          <div class="table-custom">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Benefit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="fas fa-users icon"></i> Sharing knowledge</td>
+                </tr>
+                <tr>
+                  <td><i class="fas fa-network-wired icon"></i> Networking</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-bell icon"></i> Dapatkan informasi terbaru
+                    seputar dunia Developer
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-handshake icon"></i> Bergabung bersama
+                    komunitas Developer
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Join Instructions Section -->
+          <div class="section-title">
+            <h3>Cara Bergabung di Media Online</h3>
+          </div>
+          <div class="table-custom">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Langkah</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i class="fas fa-laptop icon"></i> 1. Mengunjungi Website
+                    ini
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-user-plus icon"></i> 2. Mengisi form
+                    pendaftaran
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fas fa-check-circle icon"></i> 3. Bergabung dengan
+                    komunitas kami
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-muted" style="font-size: 1.2rem">
+            Jika tertarik, silakan isi form pendaftaran pada link berikut:
+          </p>
+          <a href="form.html" class="btn btn-pastel btn-lg mt-3"
+            >Form Sign Up</a
+          >
+        </div>
+
+        <!-- Floating Icons -->
+        <i class="fas fa-heart floating-icon"></i>
+        <i class="fas fa-star floating-icon"></i>
+        <i class="fas fa-fire floating-icon"></i>
+      </div>
+
+      <!-- Footer -->
+      <footer>&copy; 2024 Media Online | All Rights Reserved</footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
